@@ -1,4 +1,4 @@
-//const { default: axios } = require("axios");
+const { default: axios } = require("axios");
 
 async function asyncFunx(){
     let res = await axios.get(
