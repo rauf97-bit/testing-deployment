@@ -1,4 +1,5 @@
-const { default: axios } = require("axios");
+// import axios from "./node_modules/axios/dist/axios";
+// const { default: axios } = require("axios");
 
 async function asyncFunx(){
     let res = await axios.get(
