@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Payment Gateway</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+    <main>
+        <div class="heading3">
+            <h2 style="text-align: center; font-size: 1.6rem;">Payment Form</h2>
+        </div>
+        <div class="wrapper card">
+            <fieldset>
+                <legend>
+                    <h2 style="font-size: 1.2rem;">Payment Method</h2>
+                </legend>
+                <div class="credit">
+                    <div class="card1">
+                        <img src="./img/cc-paypal-brands.svg" alt="card" srcset="">
+                        <h5>Paypal</h5>
+                    </div>
+                    <div class="card1">
+                        <img src="./img/credit-card-solid.svg" alt="card" srcset="">
+                        <h5>Credit card</h5>
+                    </div>
+                    <div class="card1">
+                        <img src="./img/cc-visa-brands.svg" alt="card" srcset="">
+                        <h5>Visa</h5>
+                    </div>
+                    <div class="card1">
+                        <img src="./img/cc-mastercard-brands.svg" alt="card" srcset="">
+                        <h5>Mastercard</h5>
+                    </div>
+
+
+                </div>
+            </fieldset>
+        </div>
+        <div class="wrapper card">
+            <!-- <form action="#">
+                <fieldset>
+                    <legend>
+                        <h2 class="heading2">
+                            Select Order
+                        </h2>
+                    </legend>
+                    <input type="radio" name="item" id="stake">
+                    <label for="stake"> Stake</label>
+                    <input type="radio" name="item" id="sushi">
+                    <label for="sushi"> Sushi</label>
+                    <input type="radio" name="item" id="burger">
+                    <label for="burger"> Burger</label>
+
+                </fieldset>
+                <div class="itemx">
+                </div>
+            </form>
+ -->
+            <div class="heading3">
+                <h2 style="text-align: center; ">Personal Information</h2>
+                
+            </div>
+            <form action="/success.html">
+                <div class="form-grp2">
+                    <label for="name">Fullname</label>
+                    <input type="text" placeholder="Name..">
+                    <label for="email">Email Address</label>
+                    <input type="email" placeholder="Email.." required>
+                </div>
+                <div class="heading3">
+                    <h2 style="text-align: center; ">Credit Card Information</h2>
+                </div>
+                <div action="#" class="form-grp2">
+                    <label for="name">Name on Card</label>
+                    <input type="text" placeholder="Name..">
+                    <label for="cardNum">Card Number</label>
+                    <input type="number" min="1000000000000000" max="9999999999999999"
+                        placeholder="#### - #### - #### - ####" required>
+                </div>
+                <div action="#" class="form-grp3">
+                    <div></div>
+                    <div class="exp">
+                        <label for="exp">Expiration</label>
+                        <input type="text" placeholder="MM/YY" required>
+                    </div>
+                    <div class="cvv">
+                        <label for="cvv"> CVV </label>
+                        <input type="number" placeholder="###" required>
+                    </div>
+                </div>
+                <div class="form-grp4">
+                    <input type="submit" value="SUBMIT">
+                </div>
+
+                <input type="checkbox" name="consent" required id="">
+                <label for="consent">By clicking this you have agreed to the terms and condition and Privacy
+                    policy</label>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2021</p>
+
+        <div class="footer_socail">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-google-plus"></i></a>
+            <a href=""><i class="fa fa-rss"></i></a>
+        </div>
+
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

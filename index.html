@@ -1,0 +1,188 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="wrapper1">
+                <h1> My Restaurant <i class="fas fa-utensils"></i></h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <i></i>
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div class="heading">
+                <h2>Contact <span style="color: red;">Us</span></h2>
+
+            </div>
+            <form action="#" onsubmit=handleSubmit() class="form-grp">
+                <div class="left">
+                    <label for="name">Fullname</label>
+                    <input type="text" placeholder="Name" required name="name">
+                    <label for="email">Email</label>
+                    <input type="text" place holder="Email" required name="email">
+                    <label for="phone">Phone-number</label>
+                    <input type="tel" required placeholder="Phonenumber" name="phone">
+                </div>
+                <div class="right">
+                    <label for="comment">Add Comments</label>
+                    <textarea name="comment" id="text-area" cols="30" rows="10" placeholder="Comment...."></textarea>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="row">
+            <div class="address">
+                <h3>Location<i class="fas fa-map-marker-alt"></i></h3>
+                <hr>
+                <h4>Brookyln, New York.</h4>
+                <h4>Monte-Blanc, Paris.</h4>
+                <h4>Abuja, Nigeria.</h4>
+                <h4>Achimota, Ghana.</h4>
+            </div>
+            <div class="mail">
+                <h3>Contact Us <i class="fas fa-phone-square"></i></h3>
+                <hr>
+
+                <div class="column">
+                    <h4>USA</h4>
+                    <a href="#">+77 234 548 00 00</a>
+                    <h4>France</h4>
+                    <a href="#">+55 230 149 88</a>
+                    <h4>Nigeria</h4>
+                    <a href="#">+234 701 297 609</a>
+                    <h4>Ghana</h4>
+                    <a href="#">+227 123 570 18</a>
+                </div>
+            </div>
+            <div class="mail">
+                <h3>Mail Us <i class="fa fa-envelope"></i></h3>
+                <hr>
+                <h4>Email</h4>
+                <div class="column">
+                    <a href="mailto:#">ceo.myrestaurant@gmail.com</a>
+                    <a href="mailto:#">customer.service@gmail.com</a>
+
+                </div>
+            </div>
+
+        </div>
+        <p>Copyright &copy; 2021</p>
+
+        <div class="footer_socail">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+            <a href=""><i class="fa fa-rss"></i></a>
+        </div>
+
+    </footer>
+    <script src="script.js">
+        const handleSubmit = (e) =>{
+            e.preventDefault()
+            console.log("jef knfjn");
+            fetch("https://church-count.onrender.com", {
+                method:"POST",
+                headers:"application/json",
+                body:{
+                    Email : "pauloo22@gmail.com",
+                    Password: "password"
+                }
+            }).then(
+                res => res.json
+            ).then(console.log(res))
+        }
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+NIL
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="flex justify-center items-center min-h-screen bg-gray-100">
+        <form id="form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-sm">
+    <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            Username
+      </label>
+      <input
+      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      id="username" type="text" placeholder="Enter your username">
+    </div>
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Password
+      </label>
+      <input
+        class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+        id="password" type="password" placeholder="Enter your password">
+      <p class="text-red-500 text-xs italic">Please choose a password.</p>
+    </div>
+    <div class="flex items-center justify-between">
+        <input
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="submit" value="Submit"/>
+    </div>
+</form>
+</div>
+
+<script src="script.js"></script>
+<!-- <script>
+    const form_ = document.getElementById('form');
+    form_.addEventListener('submit', (e) =>{
+            let res;
+            e.preventDefault();
+            
+            console.log("jef knfjn");
+            fetch("https://church-count.onrender.com/api/v1/Admin/Get/department").then( res => console.log(res))
+            fetch("https://church-count.onrender.com/api/v1/auth/Login/Worker", {
+                method:"POST",
+                headers:"application/json",
+                body:{
+                    Email : "pauloo22@gmail.com",
+                    Password: "password"
+                }
+            }).then(
+                res => console.log(res.json)
+            )
+    }) 
+</script> -->
+</body>
+
+</html>
